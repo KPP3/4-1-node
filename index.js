@@ -14,7 +14,7 @@ http.createServer(function (request, response){
     response.writeHead(200, {'Content-Type': 'text/html'});
 
     let query = url.parse(request.url, true).query
-    let responseoOutput = "",
+    let responseoOutput = ""
 
     if (request.url === "/profile"){
         response.write(profile);
